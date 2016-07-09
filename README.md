@@ -1,5 +1,7 @@
 # Average Hash
 
+[![Build Status](https://travis-ci.org/atijust/go-ahash.svg?branch=master)](https://travis-ci.org/atijust/go-ahash)
+
 A simple image hashing library written in Go.
  
 ## Example use:
