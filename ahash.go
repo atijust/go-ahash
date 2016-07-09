@@ -7,7 +7,6 @@ import (
 	"github.com/nfnt/resize"
 )
 
-// 8ビットグレースケール
 func Generate(img image.Image) uint64 {
 	reszImg := resize.Resize(8, 8, img, resize.NearestNeighbor)
 	grayImg := toGray(reszImg)
@@ -40,7 +39,6 @@ func toGray(src image.Image) *image.Gray {
 	return dst
 }
 
-// 16ビットグレースケール
 func Generate16(img image.Image) uint64 {
 	reszImg := resize.Resize(8, 8, img, resize.NearestNeighbor)
 	grayImg := toGray16(reszImg)
